@@ -3,10 +3,7 @@
 <head>
 
   <title>
-    paulintrognon.fr
-    <% if content_for?(:page_title) %>
-      | <%= yield(:page_title) %>
-    <% end %>
+    paulintrognon.fr<% if content_for?(:page_title) %> | <%= yield(:page_title) %><% end %>
   </title>
 
   <%= stylesheet_link_tag    "application", :media => "all" %>
