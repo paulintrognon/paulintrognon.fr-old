@@ -1,5 +1,5 @@
 PaulintrognonFr::Application.routes.draw do
-  get "home_page/view"
+  root :to => 'home_page#view'
 
   get "static_pages/aboutMe"
   get "static_pages/aboutWebsite"
