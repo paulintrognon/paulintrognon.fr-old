@@ -15,15 +15,15 @@
             menu = [
               {
                 'name'=> 'Accueil',
-                'url' => '/'
+                'url' => root_path
               },
               {
-                'name'=> 'CV',
-                'url' => '/cv/'
+                  'name'=> 'A propos de moi',
+                  'url' => about_me_path
               },
               {
-                'name'=> 'Random',
-                'url' => '/r/'
+                'name'=> 'A propos du site',
+                'url' => about_website_path
               },
               {
                 'name'=> 'Blog',
@@ -32,13 +32,16 @@
             ]
 
             menu.each do |menuElement| %>
-            <li>
-              <a href='<%= menuElement['url'] %>'>
-                <%= menuElement['name'] %>
-              </a>
+            <li
+              <% if request.path == menuElement['url'] %>
+              class="active"
+              <% end %>
+            >
+              <%= link_to menuElement['name'], menuElement['url'] %>
             </li>
             <% end %>
         </ul>
+        <%= link_to_unless I18n.locale == :en, "English", locale: :en %>
       </div>
     </div>
   </div>

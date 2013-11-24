@@ -2,8 +2,8 @@ PaulintrognonFr::Application.routes.draw do
 
   scope '(:locale)', locale: /en|fr/ do
     root :to => 'home_page#view'
-    match '/aboutMe', to: 'static_pages#aboutMe'
-    match '/aboutWebsite', to: 'static_pages#aboutWebsite'
+    match '/aboutMe', to: 'static_pages#aboutMe', as: 'about_me'
+    match '/aboutWebsite', to: 'static_pages#aboutWebsite', as: 'about_website'
   end
 
 
