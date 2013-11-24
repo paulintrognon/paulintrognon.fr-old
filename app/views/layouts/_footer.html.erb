@@ -1,3 +1,9 @@
 <footer id="main-footer">
-  Paulin Trognon © 2013
+  <p>
+    Paulin Trognon © 2013
+  </p>
+  <p>
+    <%= link_to_unless I18n.locale == :fr, 'Français', locale: :fr %> -
+    <%= link_to_unless I18n.locale == :en, 'English', locale: :en %>
+  </p>
 </footer>
