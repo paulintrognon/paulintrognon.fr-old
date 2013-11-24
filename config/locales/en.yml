@@ -1,5 +1,12 @@
-# Sample localization file for English. Add more files in this directory for other locales.
-# See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
-
 en:
-  hello: "Hello world"
+
+  #menu
+  #----
+  home: 'Home'
+  about_me: 'About Me'
+  about_website: 'About This Website'
+  blog: 'Blog'
+
+  #home page
+  #---------
+  welcome_to_universe: 'Welcome to my universe!'

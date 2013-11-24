@@ -1,0 +1,12 @@
+fr:
+
+  #menu
+  #----
+  home: 'Accueil'
+  about_me: 'À propos de moi'
+  about_website: 'À propos du site'
+  blog: 'Blog'
+
+  #home page
+  #---------
+  welcome_to_universe: 'Bienvenue dans mon univers !'
