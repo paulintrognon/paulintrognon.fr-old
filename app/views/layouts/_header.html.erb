@@ -1,0 +1,45 @@
+<nav id="main-menu" class="navbar navbar-inverse navbar-fixed-top">
+  <div class="navbar-inner">
+    <div class="container">
+
+      <div class="navbar-header">
+        <button class="navbar-toggle" data-target=".navbar-collapse" data-toggle="collapse" type="button">
+          Paulin Trognon
+        </button>
+      </div>
+
+      <div class="collapse navbar-collapse">
+        <ul class="nav navbar-nav">
+
+          <%
+            menu = [
+              {
+                'name'=> 'Accueil',
+                'url' => '/'
+              },
+              {
+                'name'=> 'CV',
+                'url' => '/cv/'
+              },
+              {
+                'name'=> 'Random',
+                'url' => '/r/'
+              },
+              {
+                'name'=> 'Blog',
+                'url' => 'http://leblogdepaulin.wordpress.com'
+              }
+            ]
+
+            menu.each do |menuElement| %>
+            <li>
+              <a href='<%= menuElement['url'] %>'>
+                <%= menuElement['name'] %>
+              </a>
+            </li>
+            <% end %>
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>
