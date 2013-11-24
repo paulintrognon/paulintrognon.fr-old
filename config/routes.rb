@@ -1,8 +1,8 @@
 PaulintrognonFr::Application.routes.draw do
   root :to => 'home_page#view'
 
-  get "static_pages/aboutMe"
-  get "static_pages/aboutWebsite"
+  match '/aboutMe', to: 'static_pages#aboutMe'
+  match '/aboutWebsite', to: 'static_pages#aboutWebsite'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
