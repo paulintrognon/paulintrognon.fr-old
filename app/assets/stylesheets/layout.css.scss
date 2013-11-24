@@ -1,0 +1,67 @@
+/*
+#main-header {
+	height: 200px;
+
+	#main-header-title {
+		font-family: tequila, cursive;
+		font-size: 50px;
+	}
+}*/
+
+#main-menu {
+	font-family: 'roboto';
+	text-transform: uppercase;
+	font-size: 20px;
+	font-weight: 700;
+	min-height: 0;
+	border-radius: 0;
+
+	.navbar-brand {
+		float: right;
+	}
+
+	&.navbar {
+		margin: 0;
+	}
+
+	.navbar-toggle {
+		color: white;
+		width: 100%;
+		float: none;
+		margin: 0;
+	}
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	background-image: url('/img/paper-white.jpg');
+}
+
+#content {
+	background-image: url('/img/paper-blue.jpg');
+	min-height: 500px;
+	padding-top: 70px;
+	color: white;
+
+	.funky-title {
+		text-align:center;
+		font-family: 'Bowlby One SC';
+		font-size: 45px;
+		letter-spacing: 4px;
+		text-transform: uppercase;
+	}
+}
+
+#main-footer {
+	border-top: solid #111 3px;
+	border-bottom: solid #111 3px;
+	box-shadow: 0 20px 20px -20px #111 inset;
+	background-color: #222222;
+	min-height: 70px;
+	color: white;
+	font-family: 'roboto';
+	font-size: 20px;
+	text-align: center;
+	padding-top: 20px;
+}
