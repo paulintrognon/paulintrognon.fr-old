@@ -1,8 +1,11 @@
 PaulintrognonFr::Application.routes.draw do
-  root :to => 'home_page#view'
 
-  match '/aboutMe', to: 'static_pages#aboutMe'
-  match '/aboutWebsite', to: 'static_pages#aboutWebsite'
+  scope '(:locale)', locale: /en|fr/ do
+    root :to => 'home_page#view'
+    match '/aboutMe', to: 'static_pages#aboutMe'
+    match '/aboutWebsite', to: 'static_pages#aboutWebsite'
+  end
+
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
