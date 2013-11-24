@@ -6,13 +6,29 @@
    <%= full_page_title(yield(:page_title)) %>
   </title>
 
+  <!--BOOTSTRAP TWITTER-->
+  <%= stylesheet_link_tag '//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css' %>
+
+  <!--FONTS-->
+  <%= stylesheet_link_tag '//fonts.googleapis.com/css?family=Roboto:400,700,700italic' %>
+  <%= stylesheet_link_tag '//fonts.googleapis.com/css?family=Bowlby+One+SC' %>
+
   <%= stylesheet_link_tag    "application", :media => "all" %>
-  <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
 </head>
+
 <body>
 
 <%= yield %>
 
+<!-- JAVASCRIPT CDN -->
+<%= javascript_include_tag '//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js' %>
+<%= javascript_include_tag '//netdna.bootstrapcdn.com/bootstrap/3.0.2/js/bootstrap.min.js' %>
+
+<!--JAVASCRIPT LOCAL-->
+<%= javascript_include_tag "application" %>
+
 </body>
+
+
 </html>
